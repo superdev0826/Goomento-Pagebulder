@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Goomento_PageBuilderApi
+ * @link https://github.com/Goomento/PageBuilderApi
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Goomento\PageBuilderApi\Api\BuildableContentPublicRepositoryInterface"
+                type="Goomento\PageBuilderApi\Model\BuildableContentPublicRepository"/>
+    <preference for="Goomento\PageBuilderApi\Api\ResponseBuildableContentInterface"
+                type="Goomento\PageBuilderApi\Model\ResponseBuildableContent"/>
+</config>
+

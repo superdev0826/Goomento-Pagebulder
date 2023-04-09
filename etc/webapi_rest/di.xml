@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Goomento_PageBuilderApi
+ * @link https://github.com/Goomento/PageBuilderApi
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Reflection\DataObjectProcessor">
+        <arguments>
+            <argument name="processors" xsi:type="array">
+                <item name="Goomento\PageBuilderApi\Api\ResponseBuildableContentInterface"
+                      xsi:type="object">Goomento\PageBuilderApi\Model\WebApi\ChangeOutputArray\Proxy</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

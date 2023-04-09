@@ -1,0 +1,39 @@
+{
+    "name": "goomento/module-page-builder-api",
+    "description": "Rest API and GraphQL for Goomento - Magento Page Builder Extension.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0"
+    ],
+    "homepage": "https://goomento.com",
+    "authors": [
+        {
+            "name": "Goomento",
+            "homepage": "https://goomento.com",
+            "email": "goomento.com@gmail.com",
+            "role": "Developer Team"
+        }
+    ],
+    "keywords": [
+        "magento 2",
+        "magento 2 page builder",
+        "magento page builder",
+        "goomento page builder",
+        "goomento page builder rest api",
+        "goomento page builder rest full",
+        "goomento page builder graphql"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Goomento\\PageBuilderApi\\": ""
+        }
+    },
+    "require": {
+        "goomento/module-page-builder": ">=0.3.9"
+    },
+    "minimum-stability": "dev"
+}

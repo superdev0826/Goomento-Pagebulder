@@ -1,0 +1,26 @@
+# @package Goomento_PageBuilderApi
+# @link https://github.com/Goomento/PageBuilderApi
+
+type Query {
+    pagebuilder(
+        identifier: String @doc(description: "Goomento page builder identifier")
+        token: String = "" @doc(description: "Temporary access token for non-published page builder")
+    ): BuildableContent @resolver(class:"Goomento\\PageBuilderApi\\Model\\Resolver\\BuildableContent") @doc(description:"The pagebuilder query returns information about Goomento Page Builder") @cache(cacheable: true)
+}
+
+type BuildableContent @doc(description: "BuildableContent defines the page builder HTML and other details") {
+    title: String @doc(description: "Title of pagebuilder")
+    settings_content: String @doc(description: "Decoded JSON of setting for page builder")
+    elements_content: String @doc(description: "Decoded JSON of elements for page builder")
+    html: String @doc(description: "HTML content of page builder")
+    type: String @doc(description: "Page builder type")
+    status: String @doc(description: "Page builder status")
+    update_time: String @doc(description: "Page builder Update time")
+    creation_time: String @doc(description: "Page builder Creation time")
+    styles: [BuildableContentStyle] @doc(description: "List of style links")
+}
+
+type BuildableContentStyle @doc(description: "BuildableContentStyle defines list of style links and contents for Page Builder") {
+    href: String @doc(description: "Link to style")
+    content: String! @doc(description: "CSS content of page builder")
+}

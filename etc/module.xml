@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Goomento_PageBuilderApi
+ * @link https://github.com/Goomento/PageBuilderApi
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Goomento_PageBuilderApi" >
+        <sequence>
+            <module name="Goomento_PageBuilder" />
+            <module name="Magento_Webapi" />
+            <module name="Magento_GraphQl" />
+        </sequence>
+    </module>
+</config>
